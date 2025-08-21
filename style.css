@@ -536,3 +536,15 @@ footer {
   }
 } 
 
+.yt::before,
+.yt::after{
+  pointer-events: none;
+}
+
+/* (не обязательно) курсор обычный — кликаем по кнопке в самом плеере */
+.yt{ cursor: default; }
+
+.yt::after {
+  display: none !important;
+  content: none !important;
+}
