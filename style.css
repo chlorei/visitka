@@ -548,3 +548,46 @@ footer {
   display: none !important;
   content: none !important;
 }
+.cta-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 📱 На мобиле */
+@media (max-width: 640px) {
+  .cta-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Главная кнопка */
+  .cta-bar .btn[href="#contact-all"] {
+    order: -1;                /* всегда наверх */
+    width: 100%;              /* на всю ширину */
+    padding: 16px;            /* побольше */
+    font-size: 1.1rem;        /* крупнее текст */
+    font-weight: 600;
+    background: var(--accent); /* яркий цвет */
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  }
+
+  /* Остальные кнопки */
+  .cta-bar .btn.secondary {
+    width: 100%;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid rgba(0,0,0,.1);
+  }
+}
+
+.acc-panel ul {
+  padding-left: 14px; /* было 18px */
+}
+
+.acc-panel li {
+  margin: 6px 0;      /* одинаковые отступы между пунктами */
+}
