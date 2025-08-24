@@ -580,47 +580,36 @@ footer {
   }
 }
 
-.acc-panel ul {
-  padding-left: 18px;
-  margin: 0;
-}
-
-.acc-panel li {
-  margin: 6px 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 .dot-list {
   margin: 0;
-  padding-left: 18px; 
+  padding-left: 18px;
   list-style: disc;
 }
 .dot-list li {
   margin: 6px 0;
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
   line-height: 1.5;
 }
 
 .check-list {
   margin: 0;
-  padding-left: 18px; 
+  padding-left: 0;
   list-style: none;
 }
 .check-list li {
-  position: relative;
-  padding-left: 20px; 
+  margin: 6px 0;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  line-height: 1.5;
+}
+
+.acc-panel ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.acc-panel li {
   margin: 6px 0;
   font-size: 1rem;
   line-height: 1.5;
-}
-.check-list li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #2ecc71;
-  font-weight: bold;
 }
 
 
